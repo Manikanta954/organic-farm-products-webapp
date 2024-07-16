@@ -4,11 +4,7 @@ import CartItem from '../components/CartItem';
 import '../styles/Cart.css';
 
 function Cart() {
-  const { cartItems, getTotalPrice, removeFromCart } = useContext(CartContext);
-
-  const handleRemove = (id) => {
-    removeFromCart(id);
-  };
+  const { cartItems, getTotalPrice } = useContext(CartContext);
 
   const handleCheckout = () => {
     alert('Proceeding to checkout');
@@ -19,8 +15,8 @@ function Cart() {
     <div className="cart">
       <h1>Shopping Cart</h1>
       <div className="cart-items">
-        {cartItems.map((item) => (
-          <CartItem key={item.id} item={item} />
+        {cartItems.map((item, index) => (
+          <CartItem key={index} item={item} />
         ))}
       </div>
       <div className="cart-total">
