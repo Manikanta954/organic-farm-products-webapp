@@ -1,0 +1,39 @@
+/* Profile.css */
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust height as needed */
+    background-color: #f8f9fa;
+  }
+  
+  .profile-card {
+    width: 300px; /* Adjust card width as needed */
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-avatar {
+    width: 100px; /* Adjust avatar size as needed */
+    height: 100px;
+    margin: 0 auto 15px; /* Center avatar */
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .profile-name {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
