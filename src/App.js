@@ -21,7 +21,6 @@ function App() {
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/profile" element={<Profile />} />
           </Routes>
-          <Footer />
         </div>
       </Router>
     </CartProvider>
