@@ -8,18 +8,20 @@
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
+  margin-bottom: 20px; /* Add margin for spacing between cards */
 }
 
 .card:hover {
   transform: scale(1.02);
-
 }
-
 
 .card-image {
   width: 100%;
   height: 50%;
   display: block;
+  object-fit: cover; /* Ensure image covers the container */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .card-details {
@@ -56,11 +58,12 @@
 .add-to-cart-button:hover {
   background-color: #218838;
 }
+
 .card-quantity {
   margin-bottom: 10px;
   display: flex;
   align-items: center;
-  padding-left: 60px;
+  padding-left: 60px; /* Adjust for larger screens */
 }
 
 .card-quantity label {
@@ -97,4 +100,40 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* Full width on smaller screens */
+    height: auto; /* Adjust height as needed */
+  }
+
+  .card-details {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .card-name {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  .card-price {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  .add-to-cart-button {
+    padding: 10px 15px; /* Adjust button padding for smaller screens */
+  }
+
+  .card-quantity {
+    padding-left: 0; /* Remove left padding for quantity on smaller screens */
+  }
+
+  .card-quantity label {
+    margin-right: 10px; /* Adjust margin for quantity label on smaller screens */
+  }
+
+  .quantity-input input {
+    width: 40px; /* Adjust input width for smaller screens */
+  }
 }
