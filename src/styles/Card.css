@@ -105,7 +105,8 @@
 /* Responsive design */
 @media (max-width: 768px) {
   .card {
-    width: 100%; /* Full width on smaller screens */
+    width: calc(100% - 20px); /* Full width minus margin */
+    max-width: 350px; /* Limit maximum width for larger screens */
     height: auto; /* Adjust height as needed */
   }
 
@@ -114,7 +115,11 @@
   }
 
   .card-name {
-    font-size: 1rem; /* Adjust font size for smaller screens */
+    font-size: 1.1rem; /* Adjust font size for smaller screens */
+  }
+
+  .card-description {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
   }
 
   .card-price {
@@ -123,6 +128,7 @@
 
   .add-to-cart-button {
     padding: 10px 15px; /* Adjust button padding for smaller screens */
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
   }
 
   .card-quantity {
@@ -131,9 +137,11 @@
 
   .card-quantity label {
     margin-right: 10px; /* Adjust margin for quantity label on smaller screens */
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
   }
 
   .quantity-input input {
     width: 40px; /* Adjust input width for smaller screens */
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
   }
 }
