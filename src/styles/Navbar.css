@@ -96,11 +96,10 @@
 
   .navbar-links {
     margin-top: 1rem; /* Add spacing between links and logo */
-    flex-direction: column; /* Stack links vertically on small screens */
   }
 
   .navbar-links a {
-    margin: 0.5rem 0; /* Adjust margin for links */
+    margin: 0.5rem; /* Adjust margin for links */
     font-size: 0.9rem; /* Decrease font size for smaller screens */
   }
 }
