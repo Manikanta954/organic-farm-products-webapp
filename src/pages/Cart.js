@@ -20,7 +20,7 @@ function Cart() {
         ))}
       </div>
       <div className="cart-total">
-        <h2>Total: ${getTotalPrice().toFixed(2)}</h2>
+        <h2>Total: ₹{getTotalPrice().toFixed(2)}</h2>
         <button onClick={handleCheckout}>Checkout</button>
       </div>
     </div>

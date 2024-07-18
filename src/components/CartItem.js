@@ -15,7 +15,7 @@ function CartItem({ item }) {
       <div className="cart-item-details">
         <h2>{item.name}</h2>
         <p>Quantity: {item.quantity}</p>
-        <p>Price: ${(item.price * item.quantity).toFixed(2)}</p>
+        <p>Price: ₹{(item.price * item.quantity).toFixed(2)}</p>
         <button onClick={handleRemove}>Remove</button>
       </div>
     </div>

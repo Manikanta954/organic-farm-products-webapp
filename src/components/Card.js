@@ -40,7 +40,7 @@ function Card({ product, addToCart }) {
             <button className="quantity-btn" onClick={() => increaseQuantity()}>+</button>
           </div>
         </div>
-        <div className="card-price ">${(product.price * quantity).toFixed(2)}</div>
+        <div className="card-price ">₹{(product.price * quantity).toFixed(2)}</div>
         <button className='add-to-cart-button' onClick={() => addToCart({ ...product, quantity })}>Add to Cart</button>
       </div>
     </div>

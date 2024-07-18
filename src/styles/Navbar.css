@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 .navbar {
   display: flex;
   justify-content: space-between;
-  background-color: #333;
+  background-color: transparent; /* Transparent background */
   padding: 1rem;
-  color: white;
+  color: black; /* Black text color */
+  font-family: 'Great Vibes', serif;/*Playfair Display,Cinzel,Merienda,*/
+  font-weight: 500;
+}
+.playwrite-cu-d {
+  font-family: "Playwrite CU", cursive;
+  font-optical-sizing: 'auto';
+  font-weight: 400;
+  font-style: normal;
 }
 
 .navbar-links {
@@ -12,54 +22,12 @@
 }
 
 .navbar-links a {
-  color: white;
+  color: black; /* Black text color */
   margin: 0 1rem;
   text-decoration: none;
-  font-size: 1rem; /* Base font size */
-}
-
-.navbar-links a:hover {
-  color: #ff6347;
-  text-decoration: underline;
-}
-
-.cart-link {
-  position: relative;
+  font-size: 1.5rem; /* Base font size */
   display: flex;
   align-items: center;
-}
-
-.cart-badge {
-  position: absolute;
-  top: -8px;
-  right: -8px;
-  background-color: red;
-  color: white;
-  border-radius: 50%;
-  padding: 2px 6px;
-  font-size: 0.8rem;
-  font-weight: bold;
-  z-index: 1;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  background-color: #333;
-  padding: 1rem;
-  color: white;
-}
-
-.navbar-links {
-  display: flex;
-  align-items: center; /* Center items vertically */
-}
-
-.navbar-links a {
-  color: white;
-  margin: 0 1rem;
-  text-decoration: none;
-  font-size: 1rem; /* Base font size */
 }
 
 .navbar-links a:hover {
@@ -101,5 +69,11 @@
   .navbar-links a {
     margin: 0.5rem; /* Adjust margin for links */
     font-size: 0.9rem; /* Decrease font size for smaller screens */
+  }
+  .cart-badge {
+    font-size: 0.6rem; /* Decrease font size for smaller screens */
+    padding: 1px 4px; /* Adjust padding for smaller screens */
+    top: -6px; /* Adjust position for smaller screens */
+    right: -6px; /* Adjust position for smaller screens */
   }
 }
