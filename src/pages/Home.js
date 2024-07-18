@@ -36,6 +36,13 @@ function Home() {
       price: 15.00,
       image: egg,
     },
+    {
+      id: 5,
+      name: 'Free range Eggs',
+      description: 'Fresh eggs from country chickens.',
+      price: 15.00,
+      image: egg,
+    },
     // Add more products as needed
   ];
 

@@ -21,7 +21,7 @@ function Navbar() {
           <Link to="/cart" title="Cart"><RiShoppingCartLine /></Link>
           {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
         </div>
-        <Link to="/about" title="About Us"><AiOutlineInfoCircle /></Link>
+        <Link to="/about" title="AboutUs"><AiOutlineInfoCircle /></Link>
         <Link to="/profile" title="Profile"><RiUserLine /></Link>
       </div>
     </nav>
