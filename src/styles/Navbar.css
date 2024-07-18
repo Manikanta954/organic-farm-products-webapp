@@ -1,5 +1,3 @@
-/* navbar.css */
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -25,6 +23,25 @@
   text-decoration: underline;
 }
 
+.cart-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  z-index: 1;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .navbar {
@@ -35,10 +52,11 @@
 
   .navbar-links {
     margin-top: 1rem; /* Add spacing between links and logo */
+    flex-direction: column; /* Stack links vertically on small screens */
   }
 
   .navbar-links a {
-    margin: 0.5rem; /* Adjust margin for links */
+    margin: 0.5rem 0; /* Adjust margin for links */
     font-size: 0.9rem; /* Decrease font size for smaller screens */
   }
 }
