@@ -5,6 +5,10 @@ import Swal from 'sweetalert2';
 import '../styles/Home.css';
 import '../styles/Fireworks.css'; // Import the firework CSS
 import egg from './egg.jpg';
+import egg1 from './egg2.jpeg';
+import chicken2 from './chicken2.jpeg';
+import chickenbreast from './chickenbreast.jpeg';
+import mutton1 from './mutton1.jpeg';
 function Home() {
   const { addToCart } = useContext(CartContext);
   const products = [
@@ -20,28 +24,28 @@ function Home() {
       name: 'Free range Eggs',
       description: 'Fresh eggs from country chickens.',
       price: 15.00,
-      image: egg,
+      image: egg1,
     },
     {
       id: 3,
-      name: 'Free range Eggs',
-      description: 'Fresh eggs from country chickens.',
-      price: 15.00,
-      image: egg,
+      name: 'Country chicken meat',
+      description: 'Fresh and marinated country chicken meat.',
+      price: 70.00,
+      image: chicken2,
     },
     {
       id: 4,
-      name: 'Free range Eggs',
-      description: 'Fresh eggs from country chickens.',
-      price: 15.00,
-      image: egg,
+      name: 'Chicken breast',
+      description: 'Enjoy juicy marinated chicken breast of free range chicken.',
+      price: 80.00,
+      image: chickenbreast,
     },
     {
       id: 5,
-      name: 'Free range Eggs',
-      description: 'Fresh eggs from country chickens.',
-      price: 15.00,
-      image: egg,
+      name: 'Mutton',
+      description: 'Relish the tasty mutton meat from our organic farm.',
+      price: 160.00,
+      image: mutton1,
     },
     // Add more products as needed
   ];

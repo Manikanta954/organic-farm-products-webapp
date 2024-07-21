@@ -25,17 +25,18 @@
 }
 
 .card-details {
-  padding: 12px;
+  padding: 8px;
 }
 
 .card-name {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+  font-size: 0.6rem;
+  margin-bottom: 7px;
+  margin-top: 5px;
   color: #333;
 }
 
 .card-description {
-  margin-bottom: 10px;
+  margin-bottom: 9px;
   color: #666;
 }
 
@@ -48,8 +49,9 @@
   background-color: #28a745;
   color: #fff;
   border: none;
-  padding: 12px 20px;
+  padding: 12px 18px;
   border-radius: 5px;
+  width: 100%;
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-top: 10px;
@@ -67,12 +69,13 @@
 }
 
 .card-quantity label {
-  margin-right: 19px;
+  margin-right: 10px;
 }
 
 .quantity-input {
   display: flex;
   align-items: center;
+  height: 10px;
 }
 
 .quantity-btn {
@@ -99,7 +102,7 @@
   text-align: center;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 /* Responsive design */
