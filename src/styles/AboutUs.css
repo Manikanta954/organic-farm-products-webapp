@@ -1,0 +1,131 @@
+.about-us {
+    text-align: center;
+    padding: 2rem;
+    color: #333;
+    animation: fadeIn 1s ease-in-out;
+    font-family:'Great Vibes', cursive; /* Example fancy font */
+  }
+  
+  .about-us h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Great Vibes', cursive;
+  }
+  
+  .about-description {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    font-family:'Great Vibes', cursive; 
+  }
+  
+  .founder-section {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    animation: slideInUp 1s ease-in-out;
+  }
+
+  .founder-pic {
+    border-radius: 2px;
+    width: 300px;
+    height: 250px;
+    margin-right: 2rem; /* Space between image and text */
+    
+  }
+  
+  .founder-details {
+    text-align: left;
+    
+  }
+
+  .highlighted-letter {
+    font-size: 2.4rem; /* Make the first letter bigger */
+    color: green;
+    padding: 3px; /* Make the first letter green */
+  }
+  .highlighted-letter1 {
+    font-size: 2.4rem; /* Make the first letter bigger */
+    color: rgb(175, 10, 252);
+ /* Make the first letter green */
+  }
+  
+  .founder-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-family:'Great Vibes', cursive; /* Example fancy font */
+  }
+  
+  .founder-name {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-family: 'Merienda', cursive; /* Example fancy font */
+  }
+  
+  .founder-objective {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-family: 'Great Vibes', cursive; /* Example fancy font */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-us h1 {
+      font-size: 2rem;
+    }
+  
+    .about-description {
+      font-size: 1rem;
+    }
+  
+    .founder-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .founder-pic {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 1rem; /* Space between image and text for small screens */
+      margin-right: 0;
+    }
+  
+    .founder-details {
+      text-align: center;
+    }
+  
+    .founder-title {
+      font-size: 1.2rem;
+    }
+  
+    .founder-name {
+      font-size: 1rem;
+    }
+  
+    .founder-objective {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

@@ -58,7 +58,7 @@
 @media (max-width: 768px) {
   .navbar {
     align-items: center; /* Center items horizontally */
-    padding: 0.5rem; /* Adjust padding for smaller screens */
+    padding: 0.2rem; /* Adjust padding for smaller screens */
   }
 
   .navbar-links {
