@@ -104,47 +104,64 @@
   border-radius: 5px;
   font-size: 0.8rem;
 }
-
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+/* Responsive design */
 /* Responsive design */
 @media (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
   .card {
-    width: calc(100% - 20px); /* Full width minus margin */
-    max-width: 350px; /* Limit maximum width for larger screens */
-    height: auto; /* Adjust height as needed */
+    max-width: 45%;
+    height: 250px;
+  }
+
+  .card-image {
+    height: 40%; /* Adjust image height for smaller screens */
   }
 
   .card-details {
-    padding: 10px; /* Adjust padding for smaller screens */
+    padding: 8px;
   }
 
   .card-name {
-    font-size: 1.1rem; /* Adjust font size for smaller screens */
+    font-size: 0.8rem;
   }
 
   .card-description {
-    font-size: 0.9rem; /* Adjust font size for smaller screens */
+    font-size: 0.5rem;
+    margin-bottom: 20px;
   }
 
   .card-price {
-    font-size: 1rem; /* Adjust font size for smaller screens */
+    font-size: 0.6rem;
   }
 
   .add-to-cart-button {
-    padding: 10px 15px; /* Adjust button padding for smaller screens */
-    font-size: 0.9rem; /* Adjust font size for smaller screens */
+    padding: 8px 8px;
+    font-size: 0.5rem;
   }
 
   .card-quantity {
-    padding-left: 0; /* Remove left padding for quantity on smaller screens */
+    padding-left: 1px;
+    padding-right: 8px;
   }
 
   .card-quantity label {
-    margin-right: 10px; /* Adjust margin for quantity label on smaller screens */
-    font-size: 0.9rem; /* Adjust font size for smaller screens */
+    margin-right: 2px;
+    font-size: 0.4rem;
   }
 
   .quantity-input input {
-    width: 40px; /* Adjust input width for smaller screens */
-    font-size: 0.9rem; /* Adjust font size for smaller screens */
+    width: 20px;
+    height: 8px;
+    font-size: 0.4rem;
   }
 }

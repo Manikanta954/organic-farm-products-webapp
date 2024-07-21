@@ -79,7 +79,7 @@ function Home() {
   };
 
   return (
-    <div className="home">
+    <div className="home container">
       {products.map((product) => (
         <Card key={product.id} product={product} addToCart={handleAddToCart} />
       ))}

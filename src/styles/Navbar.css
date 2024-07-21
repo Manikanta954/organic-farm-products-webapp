@@ -57,7 +57,7 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column; /* Stack items vertically on small screens */
+    
     align-items: center; /* Center items horizontally */
     padding: 0.5rem; /* Adjust padding for smaller screens */
   }

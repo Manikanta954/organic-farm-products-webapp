@@ -24,7 +24,7 @@ function Card({ product, addToCart }) {
     <div className="card">
       <img src={product.image} alt={product.name} className="card-image" />
       <div className="card-details">
-        <h2>{product.name}</h2>
+        <h2 className='card-name'>{product.name}</h2>
         <p className='card-description'>{product.description}</p>
         <div className="card-quantity">
           <label>Quantity: </label>
