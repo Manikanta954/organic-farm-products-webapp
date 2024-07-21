@@ -5,4 +5,12 @@
     padding: 2rem;
     justify-content: center;
   }
-  
+  @media (max-width: 768px) {
+    .home {
+      padding: 12px; /* Reduce padding for smaller screens */
+      gap: 10px; /* Reduce gap between items for smaller screens */
+      /* flex-direction: column; Stack items vertically on very small screens */
+     padding-left: 0px;
+     padding-right: 0px;
+    }
+  }
