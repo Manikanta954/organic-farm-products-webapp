@@ -137,13 +137,13 @@
   }
 
   .card-description {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     margin-bottom: 20px;
   }
 
   .card-price {
     font-size: 0.6rem;
-    margin-top: 15px;
+    margin-top: 14px;
   }
 
   .add-to-cart-button {
