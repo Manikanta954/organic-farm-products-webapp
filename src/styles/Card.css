@@ -142,6 +142,7 @@
 
   .card-price {
     font-size: 0.6rem;
+    margin-top: 15px;
   }
 
   .add-to-cart-button {
@@ -152,16 +153,18 @@
   .card-quantity {
     padding-left: 1px;
     padding-right: 8px;
+    margin-bottom: 10px;
+    align-items: center;
   }
 
   .card-quantity label {
     margin-right: 2px;
-    font-size: 0.4rem;
+    font-size: 0.5rem;
   }
 
   .quantity-input input {
     width: 20px;
     height: 8px;
-    font-size: 0.4rem;
+    font-size: 0.5rem;
   }
 }

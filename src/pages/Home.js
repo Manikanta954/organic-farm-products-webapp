@@ -28,7 +28,7 @@ function Home() {
     },
     {
       id: 3,
-      name: 'Country chicken meat',
+      name: 'Chicken meat',
       description: 'Fresh and marinated country chicken meat.',
       price: 70.00,
       image: chicken2,
