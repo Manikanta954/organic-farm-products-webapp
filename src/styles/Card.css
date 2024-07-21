@@ -114,12 +114,13 @@
 /* Responsive design */
 @media (max-width: 768px) {
   .container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    /* grid-template-columns: repeat(2, 1fr); */
+    gap: 8px;
   }
 
   .card {
-    max-width: 45%;
+    /* max-width: 46%; */
+    width: 132px;
     height: 250px;
   }
 
