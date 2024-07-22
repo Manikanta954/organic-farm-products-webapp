@@ -1,9 +1,9 @@
-import React, { useState, useContext, useRef } from 'react';
+import React, { useState, useContext } from 'react';
 import { CartContext } from '../context/CartContext';
 import '../styles/Checkout.css';
-import Confetti from 'react-canvas-confetti';
+import CustomConfetti from './CustomConfetti';
 
-function Checkout({ onBack }) {
+const Checkout = ({ onBack }) => {
   const { getTotalPrice } = useContext(CartContext);
   const [couponCode, setCouponCode] = useState('');
   const [form, setForm] = useState({
@@ -14,7 +14,7 @@ function Checkout({ onBack }) {
     pincode: ''
   });
   const [isOrderPlaced, setIsOrderPlaced] = useState(false);
-  const confettiRef = useRef(null);
+  const [showAlert, setShowAlert] = useState(false); // State for alert visibility
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -27,24 +27,15 @@ function Checkout({ onBack }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsOrderPlaced(true);
-    fireConfetti();
     setTimeout(() => {
       setIsOrderPlaced(false);
-      alert('Order placed successfully');
-    }, 3000);
+      setShowAlert(true); // Show alert when order is placed
+      setTimeout(() => setShowAlert(false), 5000); // Hide alert after 5 seconds
+    }, 3000); // Adjust this duration as needed
   };
 
   const handleCouponCheck = () => {
     alert('Coupon code checked');
-  };
-
-  const fireConfetti = () => {
-    confettiRef.current &&
-      confettiRef.current({
-        particleCount: 150,
-        spread: 70,
-        origin: { y: 0.6 },
-      });
   };
 
   return (
@@ -120,15 +111,20 @@ function Checkout({ onBack }) {
         </div>
         <button type="submit" className="submit-button animated fadeInUp">Place Order</button>
       </form>
-      {isOrderPlaced && (
-        <Confetti
-          ref={confettiRef}
-          width={window.innerWidth}
-          height={window.innerHeight}
-        />
+      <CustomConfetti trigger={isOrderPlaced} />
+      {showAlert && (
+        <div className="success-alert">
+          <div className="tick-wrapper">
+            <svg className="tick-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path fill="none" stroke="currentColor" strokeWidth="2" d="M5 12l5 5L20 7" />
+            </svg>
+          </div>
+          <p className="message">Order placed successfully</p>
+          <button className="close-button" onClick={() => setShowAlert(false)}>Close</button>
+        </div>
       )}
     </div>
   );
-}
+};
 
 export default Checkout;
