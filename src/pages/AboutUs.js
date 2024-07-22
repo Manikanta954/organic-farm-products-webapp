@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/AboutUs.css';
-import CEO from './CEO.png'; // Add your picture in the assets folder
+import CEO3 from './CEO3.png'; // Add your picture in the assets folder
 
 function AboutUs() {
   return (
@@ -18,7 +18,7 @@ function AboutUs() {
         Organic farm.
       </p>
       <div className="founder-section">
-        <img src={CEO} alt="Founder" className="founder-pic" />
+        <img src={CEO3} alt="Founder" className="founder-pic" />
         <div className="founder-details">
           <h2 className="founder-title">Founder & CEO</h2>
           <h3 className="founder-name"><span className="highlighted-letter">M</span>anikanta <span className="highlighted-letter1">T</span>alagama</h3>
