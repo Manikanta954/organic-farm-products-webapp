@@ -101,3 +101,77 @@
 .cart-total button:hover {
   background-color: #218838;
 }
+
+/* Alert styles */
+.alert-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.alert-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.alert-box h2 {
+  margin-bottom: 1rem;
+}
+
+.ok-button {
+  background-color: #6a0dad;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.ok-button:hover {
+  background-color: #5a0ba0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .alert-box {
+    padding: 1rem;
+    font-size: 15px;
+  }
+
+  .ok-button {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .alert-box {
+    padding: 0.5rem;
+    font-size: 10px;
+  }
+
+  .ok-button {
+    padding: 0.5rem;
+  }
+}
