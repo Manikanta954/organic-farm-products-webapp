@@ -120,12 +120,71 @@
 
   .card {
     /* max-width: 46%; */
-    width: 180px;
+    width: 170px;
     height: 250px;
   }
 
   .card-image {
     height: 41.5%; /* Adjust image height for smaller screens */
+  }
+
+  .card-details {
+    padding: 8px;
+  }
+
+  .card-name {
+    font-size: 0.8rem;
+  }
+
+  .card-description {
+    font-size: 0.4rem;
+    margin-bottom: 20px;
+  }
+
+  .card-price {
+    font-size: 0.6rem;
+    margin-top: 14px;
+  }
+
+  .add-to-cart-button {
+    padding: 8px 8px;
+    font-size: 0.5rem;
+  }
+
+  .card-quantity {
+    padding-left: 10px;
+    padding-right: 8px;
+    margin-bottom: 5px;
+    margin-top :-2px;;
+    align-items: center;
+  }
+
+  .card-quantity label {
+    margin-right: 2px;
+    font-size: 0.5rem;
+  }
+
+  .quantity-input input {
+    width: 20px;
+    height: 8px;
+    font-size: 0.5rem;
+  }
+}
+/* 
+@media (max-width: 500px) {
+  .container {
+   
+    gap: 8px;
+  }
+
+  .card {
+ 
+    width: 150px;
+    height: 250px;
+  }
+
+  .card-image {
+    height: 41.5%;
   }
 
   .card-details {
@@ -169,4 +228,4 @@
     height: 8px;
     font-size: 0.5rem;
   }
-}
+} */
