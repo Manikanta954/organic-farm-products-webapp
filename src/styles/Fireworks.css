@@ -12,7 +12,7 @@
     bottom: 0;
     width: 3px;
     height: 60px;
-    background: linear-gradient(to top, transparent, #ffcc00);
+    background: linear-gradient(to top, transparent,rgb(255, 255, 13), #fc8665,rgb(243, 147, 147));
     animation: shoot 1.5s ease-out infinite;
   }
   

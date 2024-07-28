@@ -1,39 +1,208 @@
 /* Profile.css */
-
 .profile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Adjust height as needed */
-    background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: white;
+  padding: 1rem;
+}
+
+.profile-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.profile-avatar {
+  margin-bottom: 1rem;
+}
+
+.profile-icon {
+  color: #666;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.profile-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.profile-email {
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.profile-actions,
+.login-buttons {
+  margin-top: 1rem;
+}
+
+.profile-action-btn,
+.login-btn,
+.logout-btn {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Merienda', cursive;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.profile-action-btn {
+  background: rgb(210, 3, 210);
+  color: white;
+}
+
+.profile-action-btn:hover {
+  background: #e472cf;
+  color: white;
+}
+
+.login-btn.google {
+  background: #db4437;
+  color: white;
+}
+
+.login-btn.google:hover {
+  background: #c33d2e;
+}
+
+.login-btn.email {
+  background: #4285f4;
+  color: white;
+}
+
+.login-btn.email:hover {
+  background: #357ae8;
+}
+
+.login-btn.email-submit {
+  background: #34a853;
+  color: white;
+}
+
+.login-btn.email-submit:hover {
+  background: #2c8c45;
+}
+
+.logout-btn {
+  background: #ff5722;
+  color: white;
+}
+
+.logout-btn:hover {
+  background: #e64a19;
+}
+
+.email-login {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.email-input,
+.password-input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Merienda', cursive;
+  font-size: 1rem;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.success-message {
+  color: green;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
   }
-  
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
   .profile-card {
-    width: 300px; /* Adjust card width as needed */
-    padding: 20px;
-    text-align: center;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .profile-avatar {
-    width: 100px; /* Adjust avatar size as needed */
-    height: 100px;
-    margin: 0 auto 15px; /* Center avatar */
-    border-radius: 50%;
-    overflow: hidden;
-  }
-  
-  .profile-avatar img {
+    padding: 1.5rem;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 400px;
   }
-  
+
   .profile-name {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 15px;
+    font-size: 1.25rem;
   }
-  
+
+  .profile-email {
+    font-size: 0.875rem;
+  }
+
+  .profile-action-btn,
+  .login-btn,
+  .logout-btn {
+    font-size: 0.875rem;
+  }
+
+  .email-input,
+  .password-input {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-card {
+    padding: 1rem;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .profile-name {
+    font-size: 1rem;
+  }
+
+  .profile-email {
+    font-size: 0.75rem;
+  }
+
+  .profile-action-btn,
+  .login-btn,
+  .logout-btn {
+    font-size: 0.75rem;
+  }
+
+  .email-input,
+  .password-input {
+    font-size: 0.75rem;
+  }
+}
