@@ -14,7 +14,7 @@ const Checkout = ({ onBack }) => {
     pincode: ''
   });
   const [isOrderPlaced, setIsOrderPlaced] = useState(false);
-  const [showAlert, setShowAlert] = useState(false); // State for alert visibility
+  const [showAlert, setShowAlert] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -29,9 +29,9 @@ const Checkout = ({ onBack }) => {
     setIsOrderPlaced(true);
     setTimeout(() => {
       setIsOrderPlaced(false);
-      setShowAlert(true); // Show alert when order is placed
-      setTimeout(() => setShowAlert(false), 5000); // Hide alert after 5 seconds
-    }, 3000); // Adjust this duration as needed
+      setShowAlert(true);
+      setTimeout(() => setShowAlert(false), 5000);
+    }, 3000);
   };
 
   const handleCouponCheck = () => {

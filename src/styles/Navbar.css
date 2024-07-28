@@ -64,8 +64,8 @@
   }
 
   .cart-badge {
-    font-size: 0.65rem; /* Adjust font size for tablets */
-    padding: 4px 8px; /* Adjust padding for tablets */
+    font-size: 0.55rem; /* Adjust font size for tablets */
+    padding: 2px 5px; /* Adjust padding for tablets */
     top: -8px; /* Adjust position for tablets */
     right: -8px; /* Adjust position for tablets */
   }
@@ -77,14 +77,13 @@
     flex-direction: row; /* Ensure the items are in a row */
     justify-content: space-between; /* Distribute space between items */
     align-items: center; /* Center items horizontally */
-    padding: 8px;
-     /* Adjust padding for mobile devices */
+    padding: 8px; /* Adjust padding for mobile devices */
   }
 
   .navbar-brand {
     margin-bottom: 0;
     font-size: 25px;
-    font-family: "GreatVibes",cursive; /* Remove any margin */
+    font-family: "Great Vibes", cursive; /* Remove any margin */
   }
 
   .navbar-links {
@@ -98,8 +97,8 @@
   }
 
   .cart-badge {
-    font-size: 0.6rem; /* Decrease font size for mobile devices */
-    padding: 3px 6px; /* Adjust padding for mobile devices */
+    font-size: 0.3rem; /* Decrease font size for mobile devices */
+    padding: 1px 3px; /* Adjust padding for mobile devices */
     top: -6px; /* Adjust position for mobile devices */
     right: -6px; /* Adjust position for mobile devices */
   }
