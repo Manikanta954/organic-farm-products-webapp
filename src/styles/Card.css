@@ -120,12 +120,12 @@
 
   .card {
     /* max-width: 46%; */
-    width: 200px;
+    width: 180px;
     height: 250px;
   }
 
   .card-image {
-    height: 40%; /* Adjust image height for smaller screens */
+    height: 41.5%; /* Adjust image height for smaller screens */
   }
 
   .card-details {
@@ -154,7 +154,8 @@
   .card-quantity {
     padding-left: 10px;
     padding-right: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    margin-top :-2px;;
     align-items: center;
   }
 
