@@ -1,4 +1,3 @@
-/* Navbar.css */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -9,6 +8,7 @@
 
 .navbar-brand {
   font-family: 'Playfair Display', serif;
+  font-size: 1.5rem; /* Adjusted for better responsiveness */
 }
 
 .navbar-links {
@@ -17,9 +17,9 @@
 }
 
 .navbar-links a {
-  color:rgb(93, 87, 87);
+  color: rgb(93, 87, 87);
   margin-left: 30px;
-  font-size: 30px;
+  font-size: 1.8rem; /* Adjusted for better responsiveness */
   text-decoration: none;
 }
 
@@ -35,42 +35,78 @@
   color: white;
   border-radius: 50%;
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 0.75rem; /* Adjusted for better responsiveness */
 }
 
 .navbar-profile-pic {
   width: 30px;
   height: 30px;
-  font-size: 30px;
+  font-size: 1.25rem; /* Adjusted for better responsiveness */
   border-radius: 50%;
   object-fit: cover;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/* Responsive Design for Tablets and Smaller Screens */
+@media (max-width: 1024px) {
   .navbar {
-    align-items: center; /* Center items horizontally */
-    padding: 0.2rem; /* Adjust padding for smaller screens */
-  }
-
-  .navbar-links {
-    margin-top: 1rem; /* Add spacing between links and logo */
+    padding: 8px 16px; /* Adjust padding for tablets */
   }
 
   .navbar-links a {
-    margin: 0.5rem; /* Adjust margin for links */
-    font-size: 0.9rem; /* Decrease font size for smaller screens */
+    margin-left: 20px; /* Adjust margin for links */
+    font-size: 1.125rem; /* Decrease font size for tablets */
   }
-  .cart-badge {
-    font-size: 0.6rem; /* Decrease font size for smaller screens */
-    padding: 1px 4px; /* Adjust padding for smaller screens */
-    top: -6px; /* Adjust position for smaller screens */
-    right: -6px; /* Adjust position for smaller screens */
-  }
+
   .navbar-profile-pic {
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 25px;
+    height: 25px;
+    font-size: 1.125rem; /* Adjust size for tablets */
+  }
+
+  .cart-badge {
+    font-size: 0.65rem; /* Adjust font size for tablets */
+    padding: 4px 8px; /* Adjust padding for tablets */
+    top: -8px; /* Adjust position for tablets */
+    right: -8px; /* Adjust position for tablets */
+  }
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row; /* Ensure the items are in a row */
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center; /* Center items horizontally */
+    padding: 8px;
+     /* Adjust padding for mobile devices */
+  }
+
+  .navbar-brand {
+    margin-bottom: 0;
+    font-size: 25px;
+    font-family: "GreatVibes",cursive; /* Remove any margin */
+  }
+
+  .navbar-links {
+    flex-direction: row; /* Keep links in a row */
+    margin-top: 0; /* Remove any margin */
+  }
+
+  .navbar-links a {
+    margin: 0 8px; /* Adjust margin for links */
+    font-size: 1.2rem; /* Decrease font size for mobile devices */
+  }
+
+  .cart-badge {
+    font-size: 0.6rem; /* Decrease font size for mobile devices */
+    padding: 3px 6px; /* Adjust padding for mobile devices */
+    top: -6px; /* Adjust position for mobile devices */
+    right: -6px; /* Adjust position for mobile devices */
+  }
+
+  .navbar-profile-pic {
+    width: 20px;
+    height: 20px;
+    font-size: 1rem; /* Adjust size for mobile devices */
   }
 }

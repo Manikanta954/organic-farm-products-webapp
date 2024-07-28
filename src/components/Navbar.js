@@ -14,7 +14,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-brand playwrite-cu-d">
-        <Link to="/" style={{ textDecoration: "none", fontSize: "30px" }}>Organic Farm</Link>
+        <Link to="/" className='navbar-brand' style={{ textDecoration: "none" }}>Organic Farm</Link>
       </div>
       <div className="navbar-links">
         <Link to="/" title="Home"><AiOutlineHome /></Link>
