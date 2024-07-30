@@ -9,6 +9,7 @@ Organic farm products Ordering Web App is a React-based application that allows 
   <img src=".src/assets/web-img/Cart.png" alt="Screenshot 3" width="200" height="150" />
     <img src=".src/assets/web-img/login.png" alt="Screenshot 3" width="200" height="150" />
     <img src=".src/assets/web-img/order.png" alt="Screenshot 3" width="200" height="150" />
+    <img src=".src/assets/web-img/account.png" alt="Screenshot 3" width="200" height="150" />
 </div>
 
 **Features**
