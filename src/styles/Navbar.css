@@ -9,6 +9,7 @@
 .navbar-brand {
   font-family: 'Playfair Display', serif;
   font-family: "GreatVibes",cursive;
+  font-size: 34px;
    /* Adjusted for better responsiveness */
 }
 
@@ -20,7 +21,7 @@
 .navbar-links a {
   color: rgb(93, 87, 87);
   margin-left: 30px;
-  font-size: 1.8rem; /* Adjusted for better responsiveness */
+  font-size: 1.9rem; /* Adjusted for better responsiveness */
   text-decoration: none;
 }
 
@@ -83,8 +84,7 @@
 
   .navbar-brand {
     margin-bottom: 0;
-   
-    font-size: 22px;
+   font-size: 25px;
     font-family: "Great Vibes", cursive; /* Remove any margin */
   }
 
@@ -96,7 +96,7 @@
 
   .navbar-links a {
     margin: 0 8px; /* Adjust margin for links */
-    font-size: 1.2rem; /* Decrease font size for mobile devices */
+    font-size: 1.35rem; /* Decrease font size for mobile devices */
   }
 
   .cart-badge {
