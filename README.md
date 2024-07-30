@@ -4,6 +4,7 @@
 
 **Description:**
 Organic farm products Ordering Web App is a React-based application that allows users to order organic eggs online. The app features a home page with product details, a cart for managing orders, and a checkout process. The app also includes user authentication with Google and a profile page.
+**Responsive-**on various devices like mobiles,tablets,etc.
 
 <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around; gap: 20px;">
   <img src="./assets/Home.png" alt="Screenshot 1" width="500" height="350" style="border: 5px solid black;margin:1px;" />
