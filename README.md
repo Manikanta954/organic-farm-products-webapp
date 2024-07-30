@@ -5,13 +5,13 @@
 **Description:**
 Organic farm products Ordering Web App is a React-based application that allows users to order organic eggs online. The app features a home page with product details, a cart for managing orders, and a checkout process. The app also includes user authentication with Google, a profile page.
 
-<div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around; gap: 20px; border:'1px black">
-  <img src="./assets/Home.png" alt="Screenshot 1" width="350" height="250" style="margin: 10px; border: 5px solid black;" />
-  <img src="./assets/Home1.png" alt="Screenshot 2" width="350" height="250" style="margin: 10px;border: 5px solid black;" />
-  <img src="./assets/Cart.png" alt="Screenshot 3" width="350" height="250" style="margin: 10px;border: 5px solid black;" />
-  <img src="./assets/Aboutus.png" alt="Screenshot 4" width="350" height="250" style="margin: 10px;border: 5px solid black;" />
-  <img src="./assets/login.png" alt="Screenshot 5" width="350" height="250" style="margin: 10px;border: 5px solid black;" />
-  <img src="./assets/order.png" alt="Screenshot 6" width="350" height="250" style="margin: 10px;border: 5px solid black;" />
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around; gap: 20px;">
+  <img src="./assets/Home.png" alt="Screenshot 1" width="500" height="350" style="border: 5px solid black; margin: 10px;" />
+  <img src="./assets/Home1.png" alt="Screenshot 2" width="500" height="350" style="border: 5px solid black; margin: 10px;" />
+  <img src="./assets/Cart.png" alt="Screenshot 3" width="500" height="350" style="border: 5px solid black; margin: 10px;" />
+  <img src="./assets/Aboutus.png" alt="Screenshot 4" width="500" height="350" style="border: 5px solid black; margin: 10px;" />
+  <img src="./assets/login.png" alt="Screenshot 5" width="500" height="350"  style="border: 5px solid black; margin: 10px;" />
+  <img src="./assets/order.png" alt="Screenshot 6" width="500" height="350" style="border: 5px solid black; margin: 10px;" />
 </div>
 
 **Features**
