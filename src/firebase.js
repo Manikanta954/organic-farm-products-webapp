@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider, signInWithEmailAndPassword } from "firebase/auth";
 import { getAnalytics } from "firebase/analytics";
+import { getFirestore } from "firebase/firestore";
 const firebaseConfig = {
   apiKey: "AIzaSyBIwnQTLqZ5FBEIH8AFgPuuhvZSuYp_YME",
   authDomain: "organic-farm-e5915.firebaseapp.com",
@@ -17,5 +18,6 @@ const analytics = getAnalytics(app);
 // Initialize Firebase Authentication and get a reference to the service
 const auth = getAuth(app);
 const googleProvider = new GoogleAuthProvider();
+const db = getFirestore(app);
 
-export { auth, googleProvider, signInWithEmailAndPassword };
+export { auth, googleProvider, signInWithEmailAndPassword,db };
