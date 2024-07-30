@@ -9,10 +9,11 @@ Organic farm products Ordering Web App is a React-based application that allows 
   <img src="./assets/Home.png" alt="Screenshot 1" width="500" height="350" style="border: 5px solid black;margin:1px;" />
   <img src="./assets/Home1.png" alt="Screenshot 2" width="500" height="350" style="border: 5px solid black;margin:1px;"" />
   <img src="./assets/Cart.png" alt="Screenshot 3" width="500" height="350" style="border: 5px solid black;margin:1px;"" />
+   <img src="./assets/order.png" alt="Screenshot 6" width="500" height="350" style="border: 5px solid black;margin:1px;"" />
   <img src="./assets/Aboutus.png" alt="Screenshot 4" width="500" height="350" style="border: 5px solid black;margin:1px;"" />
   <img src="./assets/login.png" alt="Screenshot 5" width="500" height="350" style="border: 5px solid black;margin:1px;"" />
   <img src="./assets/account.png" alt="Screenshot 5" width="500" height="350" style="border: 5px solid black;margin:1px;"" />
-  <img src="./assets/order.png" alt="Screenshot 6" width="500" height="350" style="border: 5px solid black;margin:1px;"" />
+ 
 </div>
 
 **Features**
