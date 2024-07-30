@@ -1,13 +1,16 @@
+// src/components/Footer.js
 import React from 'react';
 import '../styles/Footer.css';
 
-function Footer() {
+const Footer = () => {
   return (
     <footer className="footer">
-      <p>© 2024 Organic Eggs. All rights reserved.</p>
-      <p>Contact us: info@organiceggs.com</p>
+      <div className="footer-content">
+        <p>&copy; 2024 Organic Farm Products. All rights reserved.</p>
+        <p><a href="/about">About Us</a></p>
+      </div>
     </footer>
   );
-}
+};
 
 export default Footer;

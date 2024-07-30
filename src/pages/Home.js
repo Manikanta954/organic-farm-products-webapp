@@ -9,6 +9,7 @@ import egg1 from './egg2.jpeg';
 import chicken2 from './chicken2.jpeg';
 import chickenbreast from './chickenbreast.jpeg';
 import mutton1 from './mutton1.jpeg';
+import Footer from '../components/Footer'; 
 function Home() {
   const { addToCart } = useContext(CartContext);
   const products = [
@@ -83,6 +84,7 @@ function Home() {
       {products.map((product) => (
         <Card key={product.id} product={product} addToCart={handleAddToCart} />
       ))}
+         <Footer />
     </div>
   );
 }
