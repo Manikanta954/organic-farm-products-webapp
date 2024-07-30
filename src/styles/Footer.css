@@ -20,3 +20,33 @@
 .footer-content a:hover {
   text-decoration: underline;
 }
+
+/* Responsive design for tablets and mobile devices */
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px 0;
+  }
+  
+  .footer-content {
+    font-size: 14px;
+  }
+  
+  .footer-content a {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+    font-size: 12px;
+  }
+  
+  .footer-content a {
+    display: block;
+    margin: 5px 0;
+  }
+}
