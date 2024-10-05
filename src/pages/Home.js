@@ -19,6 +19,7 @@ function Home() {
       description: 'Fresh organic eggs from free-range chickens.',
       price: 15.00,
       image: egg,
+      category:"eggs"
     },
     {
       id: 2,
@@ -26,6 +27,7 @@ function Home() {
       description: 'Fresh eggs from country chickens.',
       price: 15.00,
       image: egg1,
+      category:"eggs"
     },
     {
       id: 3,
@@ -33,6 +35,7 @@ function Home() {
       description: 'Fresh and marinated country chicken meat.',
       price: 70.00,
       image: chicken2,
+      category:"meat"
     },
     {
       id: 4,
@@ -40,6 +43,7 @@ function Home() {
       description: 'Enjoy juicy marinated chicken breast of free range chicken.',
       price: 80.00,
       image: chickenbreast,
+      category:"meat"
     },
     {
       id: 5,
@@ -47,6 +51,7 @@ function Home() {
       description: 'Relish the tasty mutton meat from our organic farm.',
       price: 160.00,
       image: mutton1,
+      category:"meat"
     },
     // Add more products as needed
   ];
